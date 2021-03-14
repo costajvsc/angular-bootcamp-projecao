@@ -13,7 +13,6 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 })
 export class AppComponent {
   title = 'Hello World 💻!'
-  name = 'human'
   faEnvelope = faEnvelope
   faAngular = faAngular
   faGithub = faGithub

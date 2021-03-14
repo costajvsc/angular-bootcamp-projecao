@@ -28,18 +28,18 @@
 - VSCODE
 - Firebase
 
-### npm commands
-
-```
-    node -v 
-    npm -v 
-```
-
 ### Check setup 
+
+```
+    node -v && npm -v 
+```
+
+### npm commands installs
 
 ```
     npm install -g typescript &&
     npm install -g @angular/cli
+    
 ```
 
 ## package.json 
@@ -64,8 +64,9 @@
 
 ## Start project
 
-- run the first code 
-- command 
+- compiling project and open it on browser
+- localhost:4200
+- Hot reload
 ```
     ng serve -o
 ```
@@ -84,8 +85,6 @@
 
 - Components (HTML + CSS), Routes
 - `app.component.ts`
-- Hot reload
-- localhost:4200
 
 ### Component
 
@@ -102,5 +101,5 @@
     npm install bootstrap --save
 `
 - Import bootstrap into project (`./src/style.css`)
-`@import 'boostrap/dist/css/boostrap.min.css'`
+`@import 'bootstrap/dist/css/bootstrap.min.css'`
 
