@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <h1>Contatos</h1>
+    <div class="alert alert-success" role="alert" *ngIf="added">
+        Usuário
+        : <strong> {{contactName}} </strong>
+    </div>
+    <div class="mb-5">
+        <div class="form-group">
+            <label for="contactName">Contato</label>
+            <input type="text" class="form-control" name="contactName" id="contactName" [(ngModel)]="contactName" placeholder="João Victor" (focus)="added=false">
+        </div>
+        <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" step="0.01" class="form-control" name="contactEmail" [(ngModel)]="contactEmail" placeholder="joao.victor@example.com">
+        </div>
+        <div class="form-group">
+            <label for="contactPhone">Telefone</label>
+            <input type="text" class="form-control" name="contactPhone" [(ngModel)]="contactPhone" placeholder="61 9 1234-1234">
+        </div>
+        <button class="btn btn-dark" (click)=add() type="submit">Cadastrar</button>
+    </div>
+
+    <h2>Lista de contatos</h2>
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12"  *ngFor="let c of contacts">
+            <div class="card mb-2">
+                
+                <img src="https://randomuser.me/api/portraits/lego/{{c.id}}.jpg" alt="Foto do contato" class="img-card-top">
+
+                <div class="text-center">
+                    <h4>{{c.name}}</h4>
+                    <span>
+                        <a href="mailto:{{c.email}}">
+                            <i class="fas fa-envelope"></i>
+                            {{c.email}}
+                        </a>
+                    </span>
+                    <br>
+                    <span>
+                        <a href="tel:+{{c.phone}}">
+                            <i class="fas fa-phone"></i>
+                            {{c.phone}}
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
