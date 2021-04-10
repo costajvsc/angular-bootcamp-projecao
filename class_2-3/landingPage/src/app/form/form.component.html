@@ -3,10 +3,13 @@
     <form #calcForm="ngForm" (ngSubmit)="setValue(calcForm)">
         <div class="form-group">
             <label for="#">Income</label>
-            <input type="number" step="0.01" class="form-control" name="price" ngModel="price" size="10" (focus)="verify = false" placeholder="R$ 300.00">
+            <input type="number" step="0.01" class="form-control" name="price" ngModel="price" size="10" (focus)="valid = false" placeholder="R$ 300.00">
         </div>
-        <div class="alert alert-info" role="alert" *ngIf="verify">
+        <div class="alert alert-info" role="alert" *ngIf="valid">
             discount: R$ {{response}}
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="error">
+            Value R$ {{response}} is not valid
         </div>
         <button class="btn btn-primary" type="submit">Calcular</button>
     </form>
