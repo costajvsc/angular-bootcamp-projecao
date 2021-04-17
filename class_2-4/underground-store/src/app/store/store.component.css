@@ -1,0 +1,97 @@
+.banner-header{
+    background-image: url('../../assets/banner-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.img-card{
+    max-height: 75px;
+}
+.text-header{
+    margin-top: 30%;
+}
+.nav-item{
+    padding: 0 .5em;
+    font-size: 1.2em;
+}
+.nav-item a {
+    color: #000;
+}
+.logo{
+    max-height: 100px;
+    margin: auto 0;
+}
+.nav-item a:hover {
+    text-decoration: underline;
+}
+.nav-item a:visited  {
+    color: #000;
+    text-decoration: none;
+}
+.nav-item a:active {
+    text-decoration: underline;
+}
+
+footer{
+    padding: 2em 0;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ebebeb;
+    text-decoration: none;
+}
+footer a:visited  {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:active {
+    color: #ebebeb;
+    text-decoration: none;
+}
+.btn-white{
+    background-color: #fff;
+    color: #000;
+    transition: all 250ms ease-in;
+}
+.btn-white:hover{
+    background-color: #ebebeb;
+    color: #000;
+}
+
+.btn-black{
+    background-color: #000;
+    color: #fff;
+    transition: all 250ms ease-in;
+}
+.btn-black:hover{
+    background-color: #141414;
+    color: #fff;
+}
+
+.btn-card{
+    background-color: #000;
+    color: #fff;
+    transition: all 250ms ease-in;
+}
+.btn-card:hover{
+    border: 1px solid #000;
+    background-color: #ebebeb;
+    color: #000;
+    font-size: 1.1em;
+}
+
+
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.bg-black{
+    background-color: #000;
+    color: #fff;
+}
+
