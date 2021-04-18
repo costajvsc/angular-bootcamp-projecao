@@ -86,7 +86,8 @@
                             <span>R$ {{p.price}}</span>
                         </div>
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-black" (click)=addToCard(p)>Add to card</button>
+                            <button class="btn btn-black" (click)=addToCard(p) [swal]="addSwal">Add to cart</button>
+                            <swal #addSwal title="Added to cart" text="This product {{p.title}} wad add to your cart" icon="success"></swal>
                         </div>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
         <div class="ml-auto">
             <button class="btn btn-card" data-toggle="modal" data-target="#exampleModal">
                 <i class="fas fa-shopping-cart"></i>
-                View the card
+                View the cart
             </button>
         </div>
     </section>
