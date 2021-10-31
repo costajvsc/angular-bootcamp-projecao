@@ -1,0 +1,23 @@
+<router-outlet></router-outlet>
+
+<h1>Hello World</h1>
+
+<div class="container">
+    <div class="mb-3">
+        <label for="name" class="form-label">Seu nome</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="lead.name" placeholder="João Victor">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email para contato</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="lead.email" placeholder="costa.jvsc@gmail.com">
+    </div>
+    <div class="mb-3">
+        <label for="phoneNumber" class="form-label">Telefone para contato</label>
+        <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" [(ngModel)]="lead.phoneNumber" placeholder="61 9 9627-9859">
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Em que posso te ajudar?</label>
+        <textarea class="form-control" id="message" name="message" rows="3" [(ngModel)]="lead.message"></textarea>
+    </div>
+    
+</div>

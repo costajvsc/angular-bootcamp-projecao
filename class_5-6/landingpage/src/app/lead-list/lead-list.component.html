@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Lista de contatos</h1>
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let lead of listLeads$ | async">
+                <th scope="row">{{lead.name}}</th>
+                <td>{{lead.email}}</td>
+                <td>{{lead.phoneNumber}}</td>
+                <td>
+                    <i class="fas fa-eye me-2 text-info"></i>
+                    <i class="fas fa-edit me-2 text-warning"></i>
+                    <i class="fas fa-trash me-2 text-danger"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+</div>
